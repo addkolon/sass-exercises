@@ -1,0 +1,57 @@
+//Branding
+$brand: logo !default;
+$brand-color: #0074BE !default;
+$brand-color-alt: #E2EAF2 !default;
+$brand-background-1: hsla(0, 0%, 97%, 1.0) !default;
+$brand-background-2: transparent !default;
+
+//Typo
+$font-family: Helvetica, Arial, sans-serif !default;
+$text-color: #0c0c0c !default;
+
+//Header
+$header-height: 120px !default;
+$header-padding: 0 2rem !default;
+
+
+:root {
+    --header-height: #{$header-height};
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $text-color;
+    font-family: $font-family;
+}
+
+header {
+    background-color: $brand-color;
+    height: $header-height;
+    display: flex;
+    padding: $header-padding;
+    align-items: center;
+
+    #logotype {
+        content: "";
+        background-image: url("images/#{$brand}.png");
+        background-repeat: no-repeat;
+        background-size: auto calc(#{$header-height} * 0.6);
+        height: calc(#{$header-height} * 0.6);
+        width: 100%;
+    }
+}
+
+section {
+    padding: 4rem;
+    min-width: 100%;
+    display: flex;
+
+}
+
+
+

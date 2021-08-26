@@ -1,0 +1,45 @@
+:root {
+  --header-height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: red;
+  font-family: Georgia;
+}
+
+header {
+  background-color: #0074BE;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #logotype {
+  content: "";
+  background-image: url("images/apple.png");
+  background-repeat: no-repeat;
+  background-size: auto calc(80px * 0.6);
+  height: calc(80px * 0.6);
+  width: 100%;
+}
+
+section {
+  padding: 4rem;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=client-1.css.map */
